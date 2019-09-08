@@ -1,0 +1,43 @@
+body {
+  background-color: AliceBlue;
+}
+
+.picture {
+  max-width: 400px;
+
+}
+
+.croc {
+  color: green;
+}
+
+a {
+  color: black;
+  text-align: left;
+  font-weight: bold
+
+}
+
+#box {
+  max-width: 350px;
+  background-color: silver;
+}
+
+.profpic {
+  width: 100px;
+}
+table {
+  background-color: silver;
+
+}
+form {
+  background-color: silver;
+
+}
+.crocpic {
+  max-width: 200px;
+display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+}
