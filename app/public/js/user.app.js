@@ -1,17 +1,17 @@
-var userProfileApp = new Vue({
+var profileApp = new Vue({
   el: '#userProfileApp',
   data: {
     users: []
   },
   methods: {
     fetchUsers() {
-      fetch('https://randomuser.me/api/')
+      fetch('app\public\randomuser.me-sample.json')
       .then(function(response) {return response.json()})
-      .then(function(json) {userProfileApp.people = json});
+      .then(function(json) {profileApp.people = json});
 
     }
   },
-  created() {
+  created: function() {
     this.fetchUsers();
   }
 

@@ -14,13 +14,14 @@ body {
 a {
   color: black;
   text-align: left;
-  font-weight: bold
+  font-weight: bold;
 
 }
 
-#box {
+.box {
   max-width: 350px;
   background-color: silver;
+  color: black;
 }
 
 .profpic {
