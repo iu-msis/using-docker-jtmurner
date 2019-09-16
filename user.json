@@ -1,0 +1,18 @@
+[
+  {
+    "firstName": "Steve",
+    "lastName": "Irwin",
+    "Country": "Australia",
+    "Birthday": "2012-09-01",
+    "Age": "37",
+    "Email": "steve@gmail.com",
+  },
+  {
+    "firstName": "Jason",
+    "lastName": "Murner",
+    "Country": "USA",
+    "Birthday": "1997-07-16",
+    "Age": "22",
+    "Email": "jason@gmail.com",
+  }
+]
