@@ -55,25 +55,16 @@
 
 <br>
   <div class="container">
-      <div class="box p-3 mb-2 text-justify text-center">
-        Hello
-        <div id="userProfileApp">
-          <div class="user"
-          v-for="user in users">
-            {{ user.gender }}
-            {{ users.lastName }}<br>
-            {{ users.Country }} <br>
-            {{ users.Birthday }}<br>
-            {{ users.Age }}<br>
-            {{ users.Email }}
+        <div id="userProfileApp"class="box p-3 mb-2 text-justify text-center" v-for="result in results">
+          <img v-bind:src="result.picture.large" class="rounded mx-auto d-block img-thumbnail" alt="Image" width=200px v-for="result in results">
+            Name: {{ result.name.first }} {{ result.name.last }}<br>
+            Country: {{ result.nat}}<br>
+            Birthday: {{ result.dob.date }} <br>
+            Age: {{ result.dob.age }}<br>
+            <!-- Email: <a :href="mailto:${results.email}" target="_top">{{ results.email }}</a><br> -->
           </div>
         </div>
-      </div>
-    </div>
 
-
-</div>
-</div>
 <br>
 
 
