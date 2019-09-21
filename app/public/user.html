@@ -56,13 +56,16 @@
 <br>
   <div class="container">
         <div id="userProfileApp"class="box p-3 mb-2 text-justify text-center" v-for="result in results">
+          <form @submit="fetchUsers">
           <img v-bind:src="result.picture.large" class="rounded mx-auto d-block img-thumbnail" alt="Image" width=200px v-for="result in results">
             Name: {{ result.name.first }} {{ result.name.last }}<br>
             Country: {{ result.nat }}<br>
             Birthday: {{ result.dob.date }} <br>
             Age: {{ result.dob.age }}<br>
-            Email: <a href="mailto:crocs@gmail.com" target="_top">{{ result.email }}</a><br>
-          </div>
+            Email: <a href="mailto:crocs@gmail.com" target="_top">{{ result.email }}</a><br><br>
+            <button v-on:submit.prevent="fetchUsers" class="btn btn-primary">Reload</button>
+          </form>
+        </div>
         </div>
 
 <br>

@@ -24,7 +24,16 @@ var userProfileApp = new Vue({
         fetch('https://randomuser.me/api/')
         .then(function(response) {return response.json() })
         .then(json => {userProfileApp.results = json.results });
-      }
+      },
+
+      // onSubmit() {
+      //   fetch('https://randomuser.me/api/')
+      //   .then(function(response) {return response.json() })
+      //   .then(json => {userProfileApp.results = json.results });
+      //   }
+
+
+
     },
 
   created() {
